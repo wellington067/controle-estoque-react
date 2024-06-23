@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+}
+
+.componentForm {
+    background-color: rgba(246, 246, 246, 0.868);
+    width: 600px;
+    border-radius: 12px;
+    padding: 30px;
+    margin: auto;
+    box-shadow: -8px 8px 15px 0.02px grey;
+}
