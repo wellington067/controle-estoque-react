@@ -14,7 +14,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "concurrently \"npm start --prefix src/app\" \"npm start --prefix src/api\"",
+    "heroku-postbuild": "npm install --prefix src/app && npm run build --prefix src/app",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -36,5 +37,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
   }
 }
