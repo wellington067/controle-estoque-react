@@ -7,6 +7,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.3.3",
+    "controle-estoque-react": "file:",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.23.1",
@@ -14,7 +15,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "concurrently \"npm start --prefix src/app\" \"npm start --prefix src/api\"",
+    "start": "concurrently \"npm start --prefix src/app\" \"npm run dev --prefix src/api\"",
     "heroku-postbuild": "npm install --prefix src/app && npm run build --prefix src/app",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -39,6 +40,10 @@
     ]
   },
   "devDependencies": {
-    "concurrently": "^8.2.2"
+    "concurrently": "^8.2.2",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "prettier": "^3.3.3"
   }
 }
